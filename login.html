@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="navigation.css">
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["Uname"].value;
+            var y = document.forms["myForm"]["pass"].value;
+
+                if (x == "" || x == null) {
+                    alert("Please Enter your UserName ...!");
+                    return false;
+                }else if(y == "" || y == null){
+                    alert("Please Enter your Password...!");
+                    return false;
+                }else{
+                    alert("Login Successfully...!");
+                    
+                }
+
+            }
+    </script>
+</head>
+
+<body>
+     <!--navigation bar-->
+     <nav>
+        <div class="logo1"></div>
+        <img src="Photo/Untitled-1.png" class="newlogo">
+        <ul>
+            <li><a href="Home.html" style="color: white;"><b>Home</b></a></li>
+            <li><a href="About.html" style="color: white;"><b>About</b></a></li>
+            <li><a href="News.html" style="color: white;"><b>News</b></a></li>
+            <li><a href="card.html" style="color: white;"><b>teacher</b></a></li>
+            <li> <button type="submit" class="button"><a href="login.html">Login</a></button></li>
+            
+        </ul>
+    </nav>
+    <div class="hero">
+        <form class="form1" id="formLogin" action="class.html" name="myForm" onsubmit="return validateForm()" required> 
+            <div class="loginform">
+                <label><b>User Name</b></label><br><br>
+                <input type="text" name="Uname" size="30px"  style="height: 30px; border-radius: 13px; border: none; font-size: 20px; padding-left: 20px;">
+            </div><br>
+            <div class="loginform">
+                <label><b>Password</b></label><br><br>
+                <input type="password" name="pass"  size="30px" style="height: 30px; border-radius: 13px; border: none; font-size: 20px; padding-left: 20px;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </div></br>
+            <div class="btnlogin">
+                <button type="submit"  style="width: 150px; height: 30px; font-size: large; border-radius: 13px; background-color: rgb(26, 168, 45); color: white; border: none; cursor: pointer;"><b>Login</b></button>
+               
+            </div><br>
+            <p><a href="Registration.html" target="_top" style="font-size: 20px; color: aqua;"><u>New Registreation</u></a></p>
+            <p></p>
+            
+        </form>
+       
+        
+        <div class="Footer">Contact details:<br>Assistant Director,<br> +94 112 474 724 , <br>e-mail: dilum@erd.gov.lk
+            <img src="Photo/Online_Counseling_ac53b10384.png" style="width:250px; height: 250px; float: left;">
+            <img src="Photo/c727c7122407397.Y3JvcCwxMDgwLDg0NCwwLDExNw.png" style="width:250px; height: 250px; float: right;border-radius: 100px 0 100px; margin-bottom: 30;">
+    
+        </div>
+    
+    </body>
+</html>

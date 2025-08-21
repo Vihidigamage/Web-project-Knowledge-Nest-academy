@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(Photo/e\ learning\ pic.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.form{
+    margin-left:20%;
+    margin-top: 150px;
+    margin-right: 25%;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: transparent;
+    border: 3px solid rgb(54, 59, 62);
+    backdrop-filter: blur(20px);
+    font-size: 25px;
+    text-decoration: solid;
+    border-radius: 29px;
+}
+.formtopic{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(236, 244, 246);
+    background-color: rgb(10, 8, 10);
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-radius: 25px;
+}
+.text_feild{
+    padding: 5px;
+    padding-left: 60px;
+    font-style: italic;
+    color: rgb(5, 4, 6);
+    
+}
+.lable{
+  color: rgb(74, 52, 213);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+.inputT{
+    width: 450px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: rgb(174, 176, 179);
+    color: rgb(217, 240, 13);
+    border-color: rgb(138, 143, 149);
+}
+.text_button{
+    margin-left: 60px;
+    width: 480px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 25px;
+    background-color: rgb(4, 147, 4);
+    color: aliceblue;
+    margin-top: 10px;
+}
+/*Footer bar*/
+.Footer{
+    background-color: rgb(3, 82, 111);
+    width: 100%;
+    height: 300px;
+    padding: 35px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 60px;
+    color: white;
+    padding-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

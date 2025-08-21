@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My class</title>
+    <link rel="stylesheet" href="navigation.css">
+    <style>
+        body{
+            background-color: white;
+            padding: 0;
+            margin-right: 30px;
+        }
+        .top_navi_color_bar{
+            width: 100%;
+            height: 7px;
+            background-color: rgb(236, 199, 103);
+        }
+        .welcome_bar{
+            text-align: center;
+            color: rgb(16, 71, 149);
+            font-size: 90px;
+            font-style: italic;
+            border: 2px;
+            background-color: rgb(226, 220, 220);
+            padding: 50px;
+
+        }
+        .navi_bar{
+            text-align: right;
+            margin-right: 50px;
+            font-size: 20px;
+        }
+        .topic_line{
+            text-align: center;
+            color: rgb(47, 22, 172);
+            font-size: 30px;
+        }
+
+        .ful_section{
+            width: 100%;
+            padding: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .section_videos{
+            width: 60%;
+            border: 3px solid rgb(234, 211, 81);
+            border-radius: 10px;
+            background-color: rgb(205, 187, 187);
+            padding: 20px;
+            float: left;
+            height: 300px;
+            margin-bottom: 30px;
+        }
+        .video_details{
+            width: 30%;
+            border: 3px solid rgb(234, 211, 81);
+            border-radius: 10px;
+            background-color: rgb(222, 215, 215);
+            padding: 20px;
+            float: right;
+            height: 300px;
+            text-align: justify;
+            
+        }
+        .section_v_details_format{
+            background-color:rgb(251, 198, 64);
+            width: 70%;
+            margin-left: 30px;
+            margin-top: 25px;
+            text-align: center;
+            padding: 6px;
+           
+        }
+        .section_v_details_format_duration{
+            background-color:rgb(251, 198, 64);
+            width: 70%;
+            margin-left: 30px;
+            margin-top: 30px;
+            text-align: center;
+            padding: 6px;
+        }
+        .lecture_name{
+            text-align: center;
+        }
+        .ul_list_dec{
+           color: black;
+           text-align: center;
+        }
+        .backcolor{
+            width: 95%;
+            height: 100px;
+            background-color: rgb(232, 224, 154);
+            position: absolute;
+            top: 1730px;
+            border-radius: 27px;
+            margin-right: 50px;
+            text-align: right;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            color: black;
+            padding-right: 30px;
+            padding-left: 20px;
+        }
+        .section_videos_footer{
+            width: 60%;
+            border: 3px solid rgb(234, 211, 81);
+            border-radius: 10px;
+            background-color: rgb(157, 149, 149);
+            padding: 20px;
+            float: right;
+            height: 300px;
+            margin-bottom: 30px;
+            margin-top: 150px;
+        }
+        .video_details_footer{
+            width: 30%;
+            border: 3px solid rgb(234, 211, 81);
+            border-radius: 10px;
+            background-color: rgb(161, 154, 154);
+            padding: 20px;
+            float: left;
+            height: 300px;
+            text-align: justify;
+            margin-top: 150px;
+        }
+       
+        
+        
+    </style>
+</head>
+<body>
+
+<!--navigation bar-->
+    <nav>
+        <div class="logo1"></div>
+        <img src="Photo/Untitled-1.png" class="newlogo">
+        <ul>
+            <li><a href="Home.html" style="color: white;"><b>Home</b></a></li>
+            <li><a href="About.html" style="color: white;"><b>About</b></a></li>
+            <li><a href="News.html" style="color: white;"><b>News</b></a></li>
+            <li><a href="card.html" style="color: white;"><b>teacher</b></a></li>
+            <li> <button type="submit" class="button"><a href="login.html">Login</a></button></li>
+        </ul>
+    </nav>
+
+    <div class="top_navi_color_bar"></div>
+    <hr>
+    <h1 class="welcome_bar">Wellcome Your Class Page</h1>
+    <hr>
+    <div class="top_navi_color_bar"></div>
+    <div class="navi_bar">
+        <form action="" class="serach">
+            <p><h2 class="topic_line">Today Sesion</h2>
+            <input type="text" placeholder="search class">
+            <input type="submit" value="Search"></p>
+        </form>
+    </div>
+
+        <div class="ful_section">
+            <div class="section_videos">
+                <video width="100%" height="100%" controls>
+                    <!--Video insert-->
+                    <source src="https://youtu.be/rRX4w1F0Bqg.mp4" type="video/mp4">
+                    <source src="Photo/What is E-Learning _ eLearning Courses _ elearning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="video_details"><!--Video details insert-->
+                <div class="section_v_details_format">Subject Name:Information Technology</div>
+                <p class="lecture_name">Pasan Mandara</p>
+
+                <div class="section_v_details_format_duration">Duration</div><br>
+                   <h3 class="ul_list_dec">Upload date:-2024-01-01</h3> 
+                   <h3 class="ul_list_dec">Expeir date:-2024-01-31</h3> 
+                   
+            </div>
+
+            <div class="section_videos">
+                <video width="100%" height="100%" controls>
+                    <!--Video insert-->
+                    <source src="Photo/What is E-Learning _ eLearning Courses _ elearning.mp4" type="video/mp4">
+                    <source src="Photo/What is E-Learning _ eLearning Courses _ elearning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="video_details"><!--Video details insert-->
+                <div class="section_v_details_format">Subject Name:English</div>
+                <p class="lecture_name">Amith Pussalla</p>
+           
+                <div class="section_v_details_format_duration">Duration</div><br>
+                <h3 class="ul_list_dec">Upload date:-2024-01-01</h3> 
+                <h3 class="ul_list_dec">Expeir date:-2024-01-31</h3>
+
+            </div>
+            <div class="section_videos">
+                <video width="100%" height="100%" controls>
+                    <!--Video insert-->
+                    <source src="Photo/What is E-Learning _ eLearning Courses _ elearning.mp4" type="video/mp4">
+                    <source src="Photo/What is E-Learning _ eLearning Courses _ elearning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+                 <div class="video_details"><!--Video details insert-->
+                   <div class="section_v_details_format">Subject Name:English</div>
+                   <p class="lecture_name">Akarsha Thanthril</p>
+                    
+                   <div class="section_v_details_format_duration">Duration</div><br>
+                    <h3 class="ul_list_dec">Upload date:-2024-01-01</h3> 
+                    <h3 class="ul_list_dec">Expeir date:-2024-01-31</h3>
+            
+                </div>
+        <div class="backcolor">
+            
+        </div>
+        <br><br> <br><br>
+
+        <div class="section_videos_footer">
+            <video width="100%" height="100%" controls>
+                <!--Video insert-->
+                <source src="Photo/What is E-Learning _ eLearning Courses _ elearning.mp4" type="video/mp4">
+                <source src="Photo/What is E-Learning _ eLearning Courses _ elearning.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video_details_footer"><!--Video details insert-->
+            <div class="section_v_details_format">Subject Name:English</div>
+            <p class="lecture_name">Amith Pussalla</p>
+       
+            <div class="section_v_details_format_duration">Duration</div><br>
+            <h3 class="ul_list_dec">Upload date:-2024-01-01</h3> 
+            <h3 class="ul_list_dec">Expeir date:-2024-01-31</h3>
+
+        </div>
+</body>
+</html>

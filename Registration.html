@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="styleform.css">
+    <link rel="stylesheet" href="navigation.css">
+
+    <script>
+        function validateForm() {
+            var Fname = document.forms["Rform"]["name"].value;
+            var Age = document.forms["Rform"]['age'].value;
+            var Uname = document.forms["Rform"]["uname"].value;
+            var Add = document.forms["Rform"]["address"].value;
+            var Pass = document.forms["Rform"]["pwd"].value;
+            var Cpass = document.forms["Rform"]["cpwd"].value;
+            var Email = document.forms["Rform"]["email"].value;
+            var E_level = document.forms["Rform"]["edlevel"].value;
+
+
+            // Simple validation (you can add more complex validation as needed)
+            if (!Fname || !Age || !Uname || !Add || !Pass || !Cpass || !Email || !E_level) {
+                alert('Please Enter Your Details...!');
+                return false;
+            }else if(Pass!=Cpass){
+                alert('Password are not match..?\n Please Enter Same Password...!');
+                return false;
+            }else {
+                alert('Registration successful..!');
+                document.getElementById('RGForm').reset();
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <!--navigation bar-->
+    <nav>
+        
+        <img src="Photo/Untitled-1.png" class="newlogo">
+        <ul>
+            <li><a href="Home.html" style="color: white;"><b>Home</b></a></li>
+            <li><a href="About.html" style="color: white;"><b>About</b></a></li>
+            <li><a href="News.html" style="color: white;"><b>News</b></a></li>
+            <li><a href="card.html" style="color: white;"><b>teacher</b></a></li>
+            <li> <button type="submit" class="button"><a href="login.html">Login</a></button></li>
+        </ul>
+    </nav>
+
+    <div class="form" >
+        <form action="login.html" name="Rform" id="RGForm" onsubmit="return validateForm()" required;>
+            <labale class="formtopic">Plesae Enter Your Details</labale>
+        <div class="text_feild">
+            <div class="lable"><label for="f1">Name:-</label></div>
+            <div class="text"><input type="text" class="inputT" name="name" ><br></div>
+        </div>
+        <div class="text_feild">
+            <div class="lable"> <label for="f1">Age:-</label></div>
+            <div class="text"><input type="text" class="inputT" name="age" ><br></div>
+        </div>
+        <div class="text_feild">
+            <div class="lable"><label for="f1">User Name:-</label></div>
+            <div class="text"><input type="text" class="inputT" placeholder="Ex-Gayan_127" name="uname" ><br> </div>
+        </div>
+        <div class="text_feild">
+            <div class="lable"><label for="f1">Address:-</label></div>
+            <div class="text"><input type="text" class="inputT" name="address" ><br></div>
+        </div>
+        <div class="text_feild">
+            <div class="lable"><label for="f1">Password:-</label></div>
+            <div class="text"><input type="password" class="inputT" placeholder="Ex-Abc!87/&nmge678" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br></div>
+        </div>
+        <div class="text_feild">
+            <div class="lable"><label for="f1">Confirm Password:-</label></div>
+            <div class="text"><input type="password" class="inputT" name="cpwd" ><br></div>
+        </div>
+        <div class="text_feild">
+            <div class="lable"><label for="f1">E-mail:-</label></div>
+            <div class="text"><input type="text" class="inputT" placeholder="Ex-Abc123@gmail.com" name="email" ><br></div>
+        </div>
+        <div class="text_feild">
+            <div class="lable"><label for="f1">Educastion level:-</label></div>
+            <div class="text"><select class="inputT" placeholder="Select" name="edlevel" >
+                <option value="" ></option>
+                <option value="ol">O/L</option>
+                <option value="al">A/L</option>
+                <option value="uni">Univercity</option>
+                <option value="other">Other</option>
+            </select><br></div>
+        </div>
+        <div class="">
+            <button type="submit"class="text_button">Submit</button> 
+        </div>
+    </div> 
+    </form>
+
+    <div class="Footer">Contact details:<br>Assistant Director,<br> +94 112 474 724 , <br>e-mail: dilum@erd.gov.lk
+        <img src="Photo/Online_Counseling_ac53b10384.png" style="width:250px; height: 250px; float: left;">
+        <img src="Photo/c727c7122407397.Y3JvcCwxMDgwLDg0NCwwLDExNw.png" style="width:250px; height: 250px; float: right;border-radius: 100px 0 100px; margin-bottom: 30;">
+
+    </div>
+</body>
+</html>
